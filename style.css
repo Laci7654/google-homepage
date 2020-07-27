@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Actor');
+
+body {
+    font-family: 'Actor', sans-serif;
+    font-size: 15px;
+}
+
+li a {
+    display: inline;
+}
+/* Style the search box */
+
+.search input[type=text] {
+    float: center;
+    padding: 14px 16px;
+    border: none;
+    margin-top: 16px;
+    margin-right: 5px;
+    font-size: 17px;
+}
+.active #images {
+    font-size: 12px;
+}
+
+.active #about {
+    font-size: 12px;
+}
+
+.search {
+    padding: 13rem 50rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 1rem;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+    font-style: sans-serif;
+}
+
+li {
+    float: left;
+}
+
+a {
+ display: block;
+ padding: 8px;
+}
