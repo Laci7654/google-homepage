@@ -1,53 +1,112 @@
 @import url('https://fonts.googleapis.com/css?family=Actor');
 
+/* Navigation Bar */
+
 body {
     font-family: 'Actor', sans-serif;
     font-size: 15px;
-}
-
-li a {
-    display: inline;
-}
-/* Style the search box */
-
-.search input[type=text] {
-    float: center;
-    padding: 14px 16px;
-    border: none;
-    margin-top: 16px;
-    margin-right: 5px;
-    font-size: 17px;
-}
-.active #images {
-    font-size: 12px;
-}
-
-.active #about {
-    font-size: 12px;
-}
-
-.search {
-    padding: 13rem 50rem;
-}
-
-ul {
-    list-style-type: none;
-    margin: 1rem;
+    margin: 0;
     padding: 0;
-    overflow: hidden;
-}
-
-ul li a {
-    color: black;
+    color: #222;
     text-decoration: none;
-    font-style: sans-serif;
 }
 
-li {
+.grid img {
+    height: 22px;
+    width: 22px;
+    opacity: .7;
+    display: inline-flex;
+    margin-right: 0;
+    margin-top: .55rem;
+}
+
+div.left-nav {
     float: left;
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+div.left-nav li a {
+    padding-left: 15px;
+    text-decoration: none;
+}
+
+div.right-nav {
+    float: right;
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+div.right-nav li a {
+    margin-right: 15px;
+    text-decoration: none;
 }
 
 a {
- display: block;
- padding: 8px;
+    font-size: 11px;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding-right: .5rem;
 }
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    display: inline-block;
+}
+
+/* Style the search box */
+
+.logo img {
+    display: flex;
+    position: center;
+    margin-top: 19rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17rem;
+}
+
+.round {
+    width: 100%;
+    border-radius: 30px;
+    border: 1px #D3D3D3 solid;
+    padding: 15px;
+    position: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    background: url(file:///Users/lacifletcher/Desktop/google-search-magnifying-glass-icon-5.jpg);
+    background-repeat: no-repeat;
+    background-position: 12px 9px;
+    background-size: 25px;
+    opacity: 0.6;
+}
+
+.search { 
+    position: center;
+    padding-top: 2rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30rem;
+    height: 3rem;
+}
+
+@media screen and (max-width: 480px) {
+    .search .round {
+        float: none;
+        width: auto;
+    }
+}
+
