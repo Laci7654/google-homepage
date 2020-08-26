@@ -126,6 +126,38 @@ li {
     color: rgb(95, 99, 104);
 }
 
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    float: right;
+    margin-right: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-left,.footer-right {
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px;
+}
+
+ .bottom-nav {
+    background-color: #efefef;
+    border: 1px solid #e1e1e1;
+    bottom: 0;
+    overflow: hidden;
+    padding: 0 12px 0 12px;
+    position: fixed;
+    width: 100%;
+}
+
+.bottom-nav a {
+    color: #696969;
+}
+
 @media screen and (max-width: 480px) {
     .search .round {
         float: none;
